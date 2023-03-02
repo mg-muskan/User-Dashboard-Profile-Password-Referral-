@@ -1,0 +1,95 @@
+@media (max-width: 994px) {
+    
+    .user-dashboard-heading {
+        margin: 0;
+    }
+    
+    .user-dashboard-heading h1::after {
+        content: '';
+        height: 3px;
+        width: 100px;
+        display: block;
+        background: #000;
+        margin: 0 auto 0 auto;
+    }
+    
+    .user-dashboard-nav {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #collapse-dashboard {
+        height: 0;
+        overflow: hidden;
+        transition: height 250ms, .3s ease-in-out;
+    }
+
+    #collapse-dashboard.active {
+        height: 145px;
+        transition: height 250ms, .3s ease-in-out;
+    }
+
+    .user-dashboard-left,
+    .user-dashboard-right {
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .user-dashboard-info,
+    .user-dashboard-options,
+    .user-dashboard-right-box {
+        margin: 0 0 30px;
+    }
+    
+    .user-dashboard-right-field > button {
+        top: -36px;
+    }
+
+    
+    
+    .referral-modal {
+        width: auto;
+    }
+    
+    .user-dashboard-referral-program {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .social-links-share-referral > a {
+        width: 35px;
+        height: 35px;
+        padding: 30px;
+        font-size: 30px;
+        border-radius: 50%;
+    }
+
+    .refer-share-link {
+        display: none;
+    }
+
+}
+
+@media (max-width : 450px) {
+    
+    .social-links-share-referral > a {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 380px) {
+    
+    .social-links-share-referral > a {
+        padding: 10px;
+        font-size: 10px;
+    }
+    
+    .referral-notverified {
+        padding: 3px;
+    }
+
+}
